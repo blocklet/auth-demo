@@ -2,7 +2,7 @@
   "name": "auth-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "linchen1987 <linchen.1987@foxmail.com>",
+  "author": "ArcBlock",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src api",
