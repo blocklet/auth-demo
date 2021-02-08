@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import dayjs from 'dayjs';
 
 import TextField from '@material-ui/core/TextField';
 import IconButton from '@material-ui/core/IconButton';
@@ -10,6 +11,8 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Alert from '@material-ui/lab/Alert';
+import DidAvatar from '@arcblock/did-react/lib/Avatar';
 // import CircularProgress from '@material-ui/core/CircularProgress';
 
 import Button from '@arcblock/ux/lib/Button';
@@ -72,12 +75,22 @@ export default function Main() {
           <div style={{ fontSize: 20 }}>Auth Demo</div>
         </div>
         <div className="right">
+          { isLogin && <span style={{ top: 1, position: 'relative', marginRight: 6 }}>Hello, {session.user.fullName}</span> }
           <Button onClick={() => isLogin ? session.logout() : session.login()}>{ isLogin ? 'Logout' : 'Login' }</Button>
         </div>
       </Media>
+      { !isLogin && (
+        <div style={{ marginBottom: 20 }}>
+          <Alert severity="info">Login to post message</Alert>
+        </div>
+      )}
       <Media>
         <div className="left">
-          <Avatar alt='' src={isLogin ? session.user.avatar : ''}></Avatar>
+          {
+            isLogin ?
+              <DidAvatar did= {session.user.did}></DidAvatar>
+              : <Avatar alt='' src="" ></Avatar>
+          }
         </div>
         <div className="body">
           <TextField
@@ -97,20 +110,31 @@ export default function Main() {
           />
           <div style={{textAlign: 'right', marginTop: 8}}>
             <Button rounded disabled={!isLogin || loading} variant="contained" color="primary" onClick={onPublish}>
-              Publish
+              Post
             </Button>
           </div>
         </div>
       </Media>
+      { isLogin && (
+        <>
+          <div style={{ margin: '10px 0' }}>
+            <Alert severity="info">Tip: admin role can delete post</Alert>
+          </div>
+          <div style={{ margin: '10px 0' }}>
+            <Alert severity="info">Tip: you can manage user role in ABT Node dashboard</Alert>
+          </div>
+        </>
+      )}
       <div>
         {posts.map(post => (
           <Media style={{padding: '14px 0'}}>
             <div className="left">
-              <Avatar>{post.poster.fullName[0]}</Avatar>
+              <DidAvatar did={post.poster.did} />
             </div>
             <div className="body">
               <div>
                 <span>{post.poster.fullName}</span>
+                <span style={{ marginLeft: 10, color: '#888' }}>{dayjs(post.createdAt).format('YYYY-MM-DD hh:mm:ss')}</span>
               </div>
               <div style={{ minHeight: 20, whiteSpace: 'pre' }}>{post.content}</div>
             </div>
@@ -163,7 +187,6 @@ const Container = styled.div`
     padding: 20px 0;
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
   }
 `;
 

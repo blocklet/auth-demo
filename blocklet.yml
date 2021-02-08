@@ -22,7 +22,7 @@ interfaces:
         config:
           blockUnauthenticated: false
 did: z8iZw1PjUeQP8yuEoBVWfcD9hft7cbUfxaTaT
-version: 1.0.0
+version: 1.0.1
 community: ''
 documentation: ''
 homepage: ''
