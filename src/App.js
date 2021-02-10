@@ -3,8 +3,6 @@ import { getWebWalletUrl } from './libs/util';
 import { SessionProvider } from './libs/session';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import Center from '@arcblock/ux/lib/Center';
 
 import Main from './page/main';
 
