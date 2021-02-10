@@ -1,6 +1,7 @@
 dep:
 	@echo "Install dependencies required for this repo..."
 	@yarn
+	@cp .env.bac .env
 
 test:
 	@echo "Running test suites..."
