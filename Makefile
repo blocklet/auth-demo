@@ -9,5 +9,5 @@ build:
 	@echo "Building the software..."
 
 bundle:
-  @echo "Bundling the software..."
+	@echo "Bundling the software..."
 	@npm run bundle
