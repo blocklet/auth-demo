@@ -12,3 +12,8 @@ build:
 bundle:
 	@echo "Bundling the software..."
 	@npm run bundle
+
+github-action-test:
+	@make dep
+
+include .makefiles/*.mk
