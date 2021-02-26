@@ -1,5 +1,5 @@
 name: auth-demo
-version: 1.0.3
+version: 1.0.4
 main: api/index.js
 author:
   name: linchen1987
@@ -12,6 +12,10 @@ files:
   - blocklet.md
   - README.md
   - build
+keywords:
+  - dapp
+  - demo
+  - auth
 interfaces:
   - type: web
     name: publicUrl
