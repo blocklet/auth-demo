@@ -12,6 +12,10 @@ files:
   - blocklet.md
   - README.md
   - build
+keywords:
+  - dapp
+  - demo
+  - auth
 interfaces:
   - type: web
     name: publicUrl
