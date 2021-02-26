@@ -15,6 +15,7 @@
     "bundle:server": "blocklet bundle --create-release",
     "build:client": "react-scripts build && rm -f build/**/**/*.{js,css}.map",
     "test": "node tools/jest.js",
+    "release": "npm run clean && npm run bundle",
     "coverage": "npm run test -- --coverage"
   },
   "dependencies": {
