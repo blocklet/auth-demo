@@ -1,5 +1,5 @@
 name: auth-demo
-version: 1.0.4
+version: 1.0.5
 main: api/index.js
 author:
   name: linchen1987
@@ -41,3 +41,4 @@ environments: []
 scripts:
   dev: npm run start
 screenshots: []
+children: []
