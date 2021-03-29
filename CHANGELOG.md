@@ -1,3 +1,7 @@
+## 1.0.6 (March 29, 2021)
+
+- update dependences
+
 ## 1.0.5 (March 28, 2021)
 
 - update public url of static resource
