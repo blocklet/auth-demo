@@ -1,3 +1,7 @@
+## 1.0.7 (May 12, 2021)
+
+- use exact cookie domain
+
 ## 1.0.6 (March 29, 2021)
 
 - update dependences
