@@ -1,5 +1,5 @@
 name: auth-demo
-version: 1.0.7
+version: 1.0.8
 main: api/index.js
 author:
   name: linchen1987
@@ -46,4 +46,5 @@ charging:
   price: 0
   tokens: []
   shares: []
-capabilities: {}
+capabilities:
+  clusterMode: false

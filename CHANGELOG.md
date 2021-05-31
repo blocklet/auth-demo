@@ -1,3 +1,7 @@
+## 1.0.8 (June 01, 2021)
+
+- build: update PUBLIC_URL of react app
+
 ## 1.0.7 (May 12, 2021)
 
 - use exact cookie domain
