@@ -2,15 +2,16 @@
 
 Blocklet that use auth by ABT Node Auth Service
 
+
 ## Install on my ABT Node
 
 [![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Fauth-demo%2Freleases%2Fdownload%2F1.0.8%2Fblocklet.json)
 
+## Run and debug in the cloud with Gitpod
 
-<!-- ## Run and debug in the cloud with Gitpod -->
-<!-- Click the "Open in Gitpod" button, Gitpod will start ABT Node and the blocklet. -->
+Click the "Open in Gitpod" button, Gitpod will start ABT Node and the blocklet.
 
-<!-- [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/blocklet/wallet-playground) -->
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/blocklet/auth-demo)
 
 ## Run and debug in local
 
