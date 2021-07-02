@@ -1,3 +1,7 @@
+## 1.1.0 (July 03, 2021)
+
+
+
 ## 1.0.8 (June 01, 2021)
 
 - build: update PUBLIC_URL of react app
