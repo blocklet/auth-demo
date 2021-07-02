@@ -19,21 +19,21 @@
     mkdirp "^1.0.4"
     node-line-reader "0.0.3"
 
-"@arcblock/did-react@^1.12.24":
-  version "1.12.24"
-  resolved "https://registry.yarnpkg.com/@arcblock/did-react/-/did-react-1.12.24.tgz#225c2e727b5988d905c0fa41691c8b925e38ac25"
-  integrity sha512-3UThoG0T1PhnkAqsRQhaj6ILDXVDZ6lcMSKqYV5JzgixKLm71geTwmHB1hRoBWfYnwNfWi/DwUwNJbAjjtQfew==
+"@arcblock/did-react@^1.14.6":
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/@arcblock/did-react/-/did-react-1.14.6.tgz#bcb2100538d2c2c3a433e287eff2fd0df9791701"
+  integrity sha512-tFIjHflXo2Nrq938dXEUGKWI+e9KJKQzMI6Uk/Y+ukYfI5H7ULPVGbLPjMSzGP8mfheFcWcS8Nc1qjI81JuV3Q==
   dependencies:
     "@arcblock/event-client" "^1.0.23"
-    "@arcblock/react-hooks" "^1.12.24"
-    "@arcblock/ux" "^1.12.24"
+    "@arcblock/react-hooks" "^1.14.6"
+    "@arcblock/ux" "^1.14.6"
     "@material-ui/core" "^4.10.1"
     axios "^0.21.1"
     core-js "^3.6.4"
     dsbridge "3.1.4"
     js-cookie "^2.2.1"
     qrcode.react "^1.0.0"
-    react-load-script "^0.0.6"
+    react-jdenticon "^0.0.9"
     react-use "^13.22.4"
     styled-components "^5.0.0"
 
@@ -48,21 +48,21 @@
     wolfy87-eventemitter "^5.2.5"
     ws "^7.2.0"
 
-"@arcblock/react-hooks@^1.12.24":
-  version "1.12.24"
-  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-1.12.24.tgz#343b0632eba3ff15c51e65f89c0a03d88ba6e937"
-  integrity sha512-wFWbN7iWkXTTqxe5GHOV/NjZqcSbErLnz2ruo5QBdUy8pE/SaZAYbqiEqzFmkuFYOjlkJ1kZjPeyll1ZjuEQXQ==
+"@arcblock/react-hooks@^1.14.6":
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-1.14.6.tgz#65692d45826a7ea648d1f18db6367778e32d7bc0"
+  integrity sha512-wnG3f2vtPV5DKdMYQpkPnL3YRJf8e7Mlf+V1YkH1e9hd0vO4ca5d5GrVXozD94t6ysnv3uvL37T0p8XbuxJ06Q==
   dependencies:
     core-js "^3.6.4"
     event-target-shim "^5.0.1"
     ismobilejs "^1.0.3"
 
-"@arcblock/ux@^1.12.24":
-  version "1.12.24"
-  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-1.12.24.tgz#73c44ea8a318c430584b134d73aae6f104055fd3"
-  integrity sha512-nbjC3ujkniddkarLIYB28JUaAOURjUdCrhlYBFRd5N0/Vk+1n2t8b/ssS/byz2KRsL07Gd7pF7xi/F22hZAQNg==
+"@arcblock/ux@^1.14.6":
+  version "1.14.6"
+  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-1.14.6.tgz#6975a216d9ec81d7737957b7ea9ee87bb47ec052"
+  integrity sha512-MVMeNKNNYdUwk0XhEiWJRfma4OdRotUaV2PWWKY7KNwqVeW8vnbdj9iiQNBn20ydQF53Mzof8zJQGl4HJLzQPw==
   dependencies:
-    "@arcblock/react-hooks" "^1.12.24"
+    "@arcblock/react-hooks" "^1.14.6"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@material-ui/core" "^4.10.1"
     "@material-ui/icons" "4.5.1"
@@ -78,8 +78,8 @@
     highlight.js "^9.15.8"
     js-cookie "^2.2.0"
     lodash "^4.17.21"
+    mdi-material-ui "^6.22.1"
     react-helmet "^5.2.1"
-    react-image "^4.0.3"
     react-intersection-observer "^8.31.1"
     react-load-script "^0.0.6"
     react-player "^1.15.2"
@@ -3412,6 +3412,11 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001109, can
   version "1.0.30001183"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001183.tgz#7a57ba9d6584119bb5f2bc76d3cc47ba9356b3e2"
   integrity sha512-7JkwTEE1hlRKETbCFd8HDZeLiQIUcl8rC6JgNjvHCNaxOeNmQ9V4LvQXRUsKIV2CC73qKxljwVhToaA3kLRqTw==
+
+canvas-renderer@~2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/canvas-renderer/-/canvas-renderer-2.1.1.tgz#d91fe9511ab48056ff9fa8a04514bede76535f55"
+  integrity sha512-/V0XetN7s1Mk3NO7x2wxPZYv0pLMQtGAhecuOuKR88beiYCUle1AbCcFZNLu+4NVzi9RVHS0rXtIgzPEaKidLw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -6930,6 +6935,14 @@ iterall@^1.2.2:
   resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.3.0.tgz#afcb08492e2915cbd8a0884eb93a8c94d0d72fea"
   integrity sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg==
 
+jdenticon@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/jdenticon/-/jdenticon-2.2.0.tgz#6a9d9cb2134a7848ff21d59b3871148cbc6af87f"
+  integrity sha512-WGqwpjN9pab/Sah9pGnFH5tQc3HF3WbLV/tPVbykvk5nuAkxG/zhzQYWC2owvpnS+/A0HmlSx35rtY8kyN+x7Q==
+  dependencies:
+    "@types/node" "*"
+    canvas-renderer "~2.1.1"
+
 jest-changed-files@^26.6.2:
   version "26.6.2"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-26.6.2.tgz#f6198479e1cc66f22f9ae1e22acaa0b429c042d0"
@@ -7956,6 +7969,11 @@ md5.js@^1.3.4:
     hash-base "^3.0.0"
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
+
+mdi-material-ui@^6.22.1:
+  version "6.22.1"
+  resolved "https://registry.yarnpkg.com/mdi-material-ui/-/mdi-material-ui-6.22.1.tgz#f4cd3fdd24103b87204a5d7fe1096c20b93f8d49"
+  integrity sha512-wndaFXJhoFr9g5kPw31TZajTa9uf/21jb2jD1rJ5Vi+sj2GZYnZz2BYbrfp1qFgd7tZz8XAcnpsSNMdLbe+dtw==
 
 mdn-data@2.0.14:
   version "2.0.14"
@@ -10117,11 +10135,6 @@ react-helmet@^5.2.1:
     react-fast-compare "^2.0.2"
     react-side-effect "^1.1.0"
 
-react-image@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/react-image/-/react-image-4.0.3.tgz#6fa722877660b67295298a914bff1ed87ad2cf83"
-  integrity sha512-19MUK9u1qaw9xys8XEsVkSpVhHctEBUeYFvrLTe1PN+4w5Co13AN2WA7xtBshPM6SthsOj77SlDrEAeOaJpf7g==
-
 react-intersection-observer@^8.31.1:
   version "8.31.1"
   resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.31.1.tgz#dea4e9a10bbfc899c4159eadd94354cc083920b5"
@@ -10136,6 +10149,14 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+
+react-jdenticon@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/react-jdenticon/-/react-jdenticon-0.0.9.tgz#5d019a1916a73cf8f63251e54143065bb8c718e3"
+  integrity sha512-NuAoIjNBoL5VpPgRXl52b8IwF5nOEK+imn/9usCslaJlg5qgiUjXw0lVLLI1w19cjPaJo952kjnpC2CtokcTXA==
+  dependencies:
+    jdenticon "^2.2.0"
+    prop-types "^15.7.2"
 
 react-load-script@^0.0.6:
   version "0.0.6"
