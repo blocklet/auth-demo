@@ -1,9 +1,10 @@
 name: auth-demo
-version: 1.1.0
+version: 1.1.1
 main: api/index.js
 author:
   name: linchen1987
 license: ''
+homepage: ''
 title: Auth Demo
 description: ABT Node blocklet project
 group: dapp
@@ -30,7 +31,6 @@ interfaces:
 did: z8iZw1PjUeQP8yuEoBVWfcD9hft7cbUfxaTaT
 community: ''
 documentation: ''
-homepage: ''
 timeout:
   start: 60
 requirements:

@@ -1,6 +1,8 @@
+## 1.1.1 (July 19, 2021)
+
+- build: use relative path prefix
+
 ## 1.1.0 (July 03, 2021)
-
-
 
 ## 1.0.8 (June 01, 2021)
 
