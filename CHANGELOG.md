@@ -1,3 +1,7 @@
+## 1.1.2 (August 06, 2021)
+
+- chore: use session manager from ux lib
+
 ## 1.1.1 (July 19, 2021)
 
 - build: use relative path prefix
