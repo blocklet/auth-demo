@@ -1,7 +1,7 @@
 const path = require('path');
 const { EventEmitter } = require('events');
 const util = require('util');
-const DataStore = require('@abtnode/nedb');
+const DataStore = require('@nedb/core');
 
 const dataDir = process.env.BLOCKLET_DATA_DIR || './';
 

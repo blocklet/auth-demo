@@ -12,12 +12,14 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Alert from '@material-ui/lab/Alert';
+
 import DidAvatar from '@arcblock/did-react/lib/Avatar';
-// import CircularProgress from '@material-ui/core/CircularProgress';
+import SessionManager from '@arcblock/did-react/lib/SessionManager';
 
 import Button from '@arcblock/ux/lib/Button';
 
 import { useSessionContext } from '../libs/session';
+import { getWebWalletUrl } from '../libs/util';
 
 export default function Main() {
   const { session, api } = useSessionContext();
@@ -35,38 +37,47 @@ export default function Main() {
       return;
     }
     setLoading(true);
-    api.post('/api/posts/create', { content }).then(res => {
-      setLoading(false);
-      getData();
-      setContent('');
-    }).catch(() => {
-      setLoading(false);
-    });
-  }
+    api
+      .post('/api/posts/create', { content })
+      .then((res) => {
+        setLoading(false);
+        getData();
+        setContent('');
+      })
+      .catch(() => {
+        setLoading(false);
+      });
+  };
 
   const getData = () => {
-    api.get('/api/posts/list').then(res => {
-      setPosts(res.data);
-    }).catch(() => {
-    });
-  }
+    api
+      .get('/api/posts/list')
+      .then((res) => {
+        setPosts(res.data);
+      })
+      .catch(() => {});
+  };
 
   const onDelete = (id) => {
     if (loading) {
       return;
     }
-    setDeleteDialog(null)
+    setDeleteDialog(null);
     setLoading(true);
-    api.post('/api/posts/remove', { id }).then(() => {
-      getData()
-      setLoading(false);
-    }).catch((err) => {
-      setLoading(false);
-      alert(err.message)
-    });
-  }
+    api
+      .post('/api/posts/remove', { id })
+      .then(() => {
+        getData();
+        setLoading(false);
+      })
+      .catch((err) => {
+        setLoading(false);
+        alert(err.message);
+      });
+  };
 
   const isLogin = !!session.user;
+  const webWalletUrl = getWebWalletUrl();
 
   return (
     <Container>
@@ -75,22 +86,17 @@ export default function Main() {
           <div style={{ fontSize: 20 }}>Auth Demo</div>
         </div>
         <div className="right">
-          { isLogin && <span style={{ top: 1, position: 'relative', marginRight: 6 }}>Hello, {session.user.fullName}</span> }
-          <Button onClick={() => isLogin ? session.logout() : session.login()}>{ isLogin ? 'Logout' : 'Login' }</Button>
+          <SessionManager session={session} webWalletUrl={webWalletUrl} showRole />
         </div>
       </Media>
-      { !isLogin && (
+      {!isLogin && (
         <div style={{ marginBottom: 20 }}>
           <Alert severity="info">Login to post message</Alert>
         </div>
       )}
       <Media>
         <div className="left">
-          {
-            isLogin ?
-              <DidAvatar did= {session.user.did}></DidAvatar>
-              : <Avatar alt='' src="" ></Avatar>
-          }
+          {isLogin ? <DidAvatar did={session.user.did}></DidAvatar> : <Avatar alt="" src=""></Avatar>}
         </div>
         <div className="body">
           <TextField
@@ -99,23 +105,23 @@ export default function Main() {
             multiline
             rows={4}
             value={content}
-            onChange={e => setContent(e.target.value)}
+            onChange={(e) => setContent(e.target.value)}
             variant="outlined"
             disabled={!isLogin}
             fullWidth
-            onKeyUp={e => {
-              console.log(e.code)
-              if(e.code === 'Enter' && e.ctrlKey) onPublish()
+            onKeyUp={(e) => {
+              console.log(e.code);
+              if (e.code === 'Enter' && e.ctrlKey) onPublish();
             }}
           />
-          <div style={{textAlign: 'right', marginTop: 8}}>
+          <div style={{ textAlign: 'right', marginTop: 8 }}>
             <Button rounded disabled={!isLogin || loading} variant="contained" color="primary" onClick={onPublish}>
               Post
             </Button>
           </div>
         </div>
       </Media>
-      { isLogin && (
+      {isLogin && (
         <>
           <div style={{ margin: '10px 0' }}>
             <Alert severity="info">Tip: admin role can delete post</Alert>
@@ -126,26 +132,32 @@ export default function Main() {
         </>
       )}
       <div>
-        {posts.map(post => (
-          <Media style={{padding: '14px 0'}}>
+        {posts.map((post) => (
+          <Media style={{ padding: '14px 0' }}>
             <div className="left">
               <DidAvatar did={post.poster.did} />
             </div>
             <div className="body">
               <div>
                 <span>{post.poster.fullName}</span>
-                <span style={{ marginLeft: 10, color: '#888' }}>{dayjs(post.createdAt).format('YYYY-MM-DD hh:mm:ss')}</span>
+                <span style={{ marginLeft: 10, color: '#888' }}>
+                  {dayjs(post.createdAt).format('YYYY-MM-DD hh:mm:ss')}
+                </span>
               </div>
               <div style={{ minHeight: 20, whiteSpace: 'pre' }}>{post.content}</div>
             </div>
             <div className="right">
-              { isLogin && session.user.role === 'admin' && (
-                <IconButton color="secondary" aria-label="upload picture" component="span" onClick={() => {
-                  setDeleteDialog({ id: post._id})
-                }}>
+              {isLogin && session.user.role === 'admin' && (
+                <IconButton
+                  color="secondary"
+                  aria-label="upload picture"
+                  component="span"
+                  onClick={() => {
+                    setDeleteDialog({ id: post._id });
+                  }}>
                   <DeleteIcon />
                 </IconButton>
-              ) }
+              )}
             </div>
           </Media>
         ))}
@@ -153,20 +165,23 @@ export default function Main() {
       {!!deleteDialog && (
         <Dialog
           open
-          onClose={() => { setDeleteDialog(null) }}
+          onClose={() => {
+            setDeleteDialog(null);
+          }}
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
           maxWidth="sm"
-          fullWidth
-        >
+          fullWidth>
           <DialogTitle id="alert-dialog-title"></DialogTitle>
           <DialogContent>
-            <DialogContentText id="alert-dialog-description">
-              Confirm Delete?
-            </DialogContentText>
+            <DialogContentText id="alert-dialog-description">Confirm Delete?</DialogContentText>
           </DialogContent>
           <DialogActions>
-            <Button onClick={() => { setDeleteDialog(null) }} color="primary">
+            <Button
+              onClick={() => {
+                setDeleteDialog(null);
+              }}
+              color="primary">
               No
             </Button>
             <Button onClick={() => onDelete(deleteDialog.id)} color="primary" autoFocus>

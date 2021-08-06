@@ -17,10 +17,7 @@ function App() {
   const webWalletUrl = getWebWalletUrl();
 
   return (
-    <SessionProvider
-      serviceHost={apiPrefix}
-      webWalletUrl={webWalletUrl}
-    >
+    <SessionProvider serviceHost={apiPrefix} webWalletUrl={webWalletUrl}>
       <CssBaseline />
       <Main />
     </SessionProvider>
