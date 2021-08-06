@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@arcblock/did-react@^1.14.31":
-  version "1.14.31"
-  resolved "https://registry.yarnpkg.com/@arcblock/did-react/-/did-react-1.14.31.tgz#2007161a179788045a18f95ad9573ef673c5fce7"
-  integrity sha512-WMTofFpO85EaW4kB78IZbyrcEdQmWv57ia6NydeFeBbau0GeUNXx9qmBKOzUDeiwNAsrOganrBtukMkGrSBFiQ==
+"@arcblock/did-react@^1.14.32":
+  version "1.14.32"
+  resolved "https://registry.yarnpkg.com/@arcblock/did-react/-/did-react-1.14.32.tgz#624ccd9b2f3de70ad8a7a071831eceaff8fe41c1"
+  integrity sha512-4+3uEmZcAGsoR8bAV0lXaAO5l4ARFVgzB/n2oGBQ1NTc8whofOeBlCndiFg7IeTJwmVuG/6q0ZmvDzazRDPosQ==
   dependencies:
     "@arcblock/event-client" "^1.0.23"
-    "@arcblock/react-hooks" "^1.14.31"
-    "@arcblock/ux" "^1.14.31"
+    "@arcblock/react-hooks" "^1.14.32"
+    "@arcblock/ux" "^1.14.32"
     "@fontsource/ubuntu-mono" "^4.4.5"
     "@material-ui/core" "^4.10.1"
     axios "^0.21.1"
@@ -33,21 +33,21 @@
     wolfy87-eventemitter "^5.2.5"
     ws "^7.2.0"
 
-"@arcblock/react-hooks@^1.14.31":
-  version "1.14.31"
-  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-1.14.31.tgz#25fa46763a6a6b936b66641af1bba99a1b4d5698"
-  integrity sha512-NKyy90l85fs5rP9wLE678mRj/9wpuaGxVSjQ6qqcdFHfg8q2uyEGZQVyRqb4unDRAKp/qGZMp1o2m/KBQY6pMg==
+"@arcblock/react-hooks@^1.14.32":
+  version "1.14.32"
+  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-1.14.32.tgz#f6908944ee143fe1132b5ea8a00f2047b1c21331"
+  integrity sha512-24tZ8OaaImW9hKnd66MseMXha8PRLQM8yaWsD/7WcBhdxzA+nxBhwbevzjZY9N97ScHhrJ6fUcqzd3rKHZZbew==
   dependencies:
     core-js "^3.6.4"
     event-target-shim "^5.0.1"
     ismobilejs "^1.0.3"
 
-"@arcblock/ux@^1.14.31":
-  version "1.14.31"
-  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-1.14.31.tgz#a4d823c056c7fa13beb76a6f6e8e97736238b419"
-  integrity sha512-M1PFnzfkp3+e5ovrOC+N62gf8aqM1ylmmjMv2Pejr4Dursx0wqFDoue1yCjAdyofa27bD8Je5d5tlbsbtXw3gw==
+"@arcblock/ux@^1.14.32":
+  version "1.14.32"
+  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-1.14.32.tgz#ac2950b921daec5c7bdeffdcb0f0ac841847ede0"
+  integrity sha512-FYJSiUECG4I8F1GkZMnbdqbFP+wO/piUe/7NUSOIoLd/UCQjuXggMVin5luWd6dMSI+BbAIjZJgJGfZONYkUmg==
   dependencies:
-    "@arcblock/react-hooks" "^1.14.31"
+    "@arcblock/react-hooks" "^1.14.32"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@material-ui/core" "^4.10.1"
     "@material-ui/icons" "4.5.1"
