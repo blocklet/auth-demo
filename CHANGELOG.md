@@ -1,3 +1,7 @@
+## 1.1.3 (August 23, 2021)
+
+- chore: replace did-react with did-connect
+
 ## 1.1.2 (August 06, 2021)
 
 - chore: use session manager from ux lib
