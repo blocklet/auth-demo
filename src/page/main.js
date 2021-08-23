@@ -13,8 +13,8 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Alert from '@material-ui/lab/Alert';
 
-import DidAvatar from '@arcblock/did-react/lib/Avatar';
-import SessionManager from '@arcblock/did-react/lib/SessionManager';
+import DidAvatar from '@arcblock/did-connect/lib/Avatar';
+import SessionManager from '@arcblock/did-connect/lib/SessionManager';
 
 import Button from '@arcblock/ux/lib/Button';
 
