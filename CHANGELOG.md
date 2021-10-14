@@ -1,3 +1,7 @@
+## 1.1.4 (十月 14, 2021)\n
+
+- feat: use action-workflow
+
 ## 1.1.3 (August 23, 2021)
 
 - chore: replace did-react with did-connect
