@@ -1,4 +1,7 @@
-## 1.1.5 (十月 14, 2021)\n
+## 1.1.6 (October 26, 2021)
+- feat: support did connect 2.0
+
+## 1.1.5 (October 14, 2021)
 
 - fix: README.md
 
