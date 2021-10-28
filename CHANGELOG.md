@@ -1,3 +1,7 @@
+## 1.1.7 (October 28, 2021)
+
+- chore: bump deps to latest
+
 ## 1.1.6 (October 26, 2021)
 - feat: support did connect 2.0
 
