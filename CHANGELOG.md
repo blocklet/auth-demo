@@ -1,3 +1,7 @@
+## 1.1.9 (November 19, 2021)
+
+- chore: update deps to latest
+
 ## 1.1.8 (November 08, 2021)
 
 - chore: update deps to latest
