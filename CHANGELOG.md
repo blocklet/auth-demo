@@ -1,3 +1,7 @@
+## 1.1.11 (十二月 08, 2021)
+
+- chore: upgrade blocklet.yml
+
 ## 1.1.10 (November 23, 2021)
 
 - chore: update deps to latest
@@ -15,13 +19,14 @@
 - chore: bump deps to latest
 
 ## 1.1.6 (October 26, 2021)
+
 - feat: support did connect 2.0
 
 ## 1.1.5 (October 14, 2021)
 
 - fix: README.md
 
-## 1.1.4 (十月 14, 2021)\n
+## 1.1.4 (十月 14, 2021)
 
 - feat: use action-workflow
 
