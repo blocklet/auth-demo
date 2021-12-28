@@ -1,27 +1,23 @@
 # Auth Demo Blocklet
 
-Blocklet that use auth by ABT Node Auth Service
-
-## Install on my ABT Node
-
-[![Install on my ABT Node](https://raw.githubusercontent.com/blocklet/development-guide/main/assets/install_on_abtnode.svg)](https://install.arcblock.io/?action=blocklet-install&meta_url=https%3A%2F%2Fgithub.com%2Fblocklet%2Fauth-demo%2Freleases%2Fdownload%2Fv1.1.11%2Fblocklet.json)
+Blocklet that use auth by Blocklet Server Auth Service
 
 ## Run and debug in the cloud with Gitpod
 
-Click the "Open in Gitpod" button, Gitpod will start ABT Node and the blocklet.
+Click the "Open in Gitpod" button, Gitpod will start Blocklet Server and the blocklet.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/blocklet/auth-demo)
 
 ## Run and debug in local
 
 ```shell
-yarn global add @abtnode/cli
+yarn global add @blocklet/cli
 git clone git@github.com:blocklet/auth-demo.git
 cd auth-demo
 cp .env.bac .env
 yarn
-abtnode init -f --mode debug
-abtnode start
+blocklet server init -f --mode debug
+blocklet server start
 blocklet dev
 ```
 
