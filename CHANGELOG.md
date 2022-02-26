@@ -1,7 +1,10 @@
+## 1.3.1 (February 26, 2022)
+
+- chore: cleanup api env
+
 ## 1.3.0 (February 26, 2022)
 
 - chore(deps): bump chain and common deps to latest
-- [skip ci] Update README.md
 
 ## 1.2.0 (January 21, 2022)
 
