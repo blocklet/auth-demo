@@ -6,18 +6,16 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 
 import Main from './page/main';
 
-let apiPrefix = '/';
+let prefix = '/';
 if (window.blocklet && window.blocklet.prefix) {
-  apiPrefix = window.blocklet.prefix;
-} else if (window.env && window.env.apiPrefix) {
-  apiPrefix = window.env.apiPrefix;
+  prefix = window.blocklet.prefix;
 }
 
 function App() {
   const webWalletUrl = getWebWalletUrl();
 
   return (
-    <SessionProvider serviceHost={apiPrefix} webWalletUrl={webWalletUrl}>
+    <SessionProvider serviceHost={prefix} webWalletUrl={webWalletUrl}>
       <CssBaseline />
       <Main />
     </SessionProvider>
