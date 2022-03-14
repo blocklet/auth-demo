@@ -1,3 +1,7 @@
+## 1.4.0 (March 15, 2022)
+
+- chore: update blocklet.yml
+
 ## 1.3.1 (February 26, 2022)
 
 - chore: cleanup api env
