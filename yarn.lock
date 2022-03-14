@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@arcblock/did-connect@^1.16.33":
-  version "1.16.33"
-  resolved "https://registry.yarnpkg.com/@arcblock/did-connect/-/did-connect-1.16.33.tgz#3d83954c32cfe55d8eb585319a81d0070f0b489a"
-  integrity sha512-9RFdKRaJ9TFtjfohkpDvaouGZTe2vYXJA9q7f2TjnwW3AWVKylw7XqRiXGJ7PSzgAdc9H1LT35E/orprhp1ytw==
+"@arcblock/did-connect@^1.16.41":
+  version "1.16.41"
+  resolved "https://registry.yarnpkg.com/@arcblock/did-connect/-/did-connect-1.16.41.tgz#923cd9709d3afd4f124e3d7a9fc8edfc176af31c"
+  integrity sha512-dcft+ObK+R9i/snCDjLmjq3K7Y9mpew5b28T1J/9Q7P2YsyebD82ezVpeJ3RYWtYAJt4m78jkmD3SpMzl8FU8A==
   dependencies:
-    "@arcblock/did-motif" "1.0.4"
+    "@arcblock/did-motif" "^1.1.1"
     "@arcblock/event-client" "^1.0.23"
-    "@arcblock/icons" "^1.16.33"
-    "@arcblock/react-hooks" "^1.16.33"
-    "@arcblock/ux" "^1.16.33"
+    "@arcblock/icons" "^1.16.41"
+    "@arcblock/react-hooks" "^1.16.41"
+    "@arcblock/ux" "^1.16.41"
     "@fontsource/rubik" "^4.5.0"
     "@fontsource/ubuntu-mono" "^4.4.5"
     "@material-ui/core" "^4.12.3"
@@ -26,10 +26,10 @@
     react-use "^17.2.4"
     styled-components "^5.0.0"
 
-"@arcblock/did-motif@1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@arcblock/did-motif/-/did-motif-1.0.4.tgz#f9c695bad50f850fad5ad5ef256ee9951ed46dfa"
-  integrity sha512-Fhzuz6kVA9bXyLtFJQ/zb5YXPMSO3dt8n93xhrrKnj6Iv/YuOEoV78ojWvYRZnjYb1t+X/JoN5bl85p11obv+A==
+"@arcblock/did-motif@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@arcblock/did-motif/-/did-motif-1.1.1.tgz#f60b35d6ca8732414c6c3452c0a6f47de30f75d1"
+  integrity sha512-7FLy231VqkqX2onWhlAzoF8Jd2ddOvKnxLSTbM0AoivWepH4M09wW0d1AItVStkVMLIbCNDGHLJ8C+0lPwF7rw==
   dependencies:
     multibase "^4.0.6"
 
@@ -44,27 +44,27 @@
     wolfy87-eventemitter "^5.2.5"
     ws "^7.2.0"
 
-"@arcblock/icons@^1.16.33":
-  version "1.16.33"
-  resolved "https://registry.yarnpkg.com/@arcblock/icons/-/icons-1.16.33.tgz#14fa05e12fbcf8523022d446178bf85c2c33175f"
-  integrity sha512-tBdbrCa6jwk6ohp7FZD2C6CVxV9YytubIvOqBG2Tc6N9KNgfgUig2aL39vLkuYLEaqEjXr+7F+CgYVx3oznBzg==
+"@arcblock/icons@^1.16.41":
+  version "1.16.41"
+  resolved "https://registry.yarnpkg.com/@arcblock/icons/-/icons-1.16.41.tgz#46eaadaeddbeb11cf891aafd8e8a370e8f57e64e"
+  integrity sha512-44UzHEFzMdGJLe293plXOUxmLjssQgMFYErw+SFvsFtBQ9sdQMfMXYHsvE4feLibVv/efIVwrM77+iiLuI3kcQ==
 
-"@arcblock/react-hooks@^1.16.33":
-  version "1.16.33"
-  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-1.16.33.tgz#9070a5d41ffcd12ea7f45c5c0bc0eeb5212042b7"
-  integrity sha512-8BKEQ9CaFV02ASSnuCz0aW+RVPn3g71F0PsT/GQcN0n37BmawH5xkFE26RDzyGhclGdEMZ3Xx6bRuM46tdk+Xg==
+"@arcblock/react-hooks@^1.16.41":
+  version "1.16.41"
+  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-1.16.41.tgz#1f90c92015b2f64ed55c70819cd17b391f48582d"
+  integrity sha512-ZNi9uwhUMcrerTuEyEDqGU5odYzJpUiZOzdBavSWQkgwjtVqld4LEk8PNKMO1LYlW7lI4XaV6n4qVlZ/d6sp/Q==
   dependencies:
     core-js "^3.6.4"
     event-target-shim "^5.0.1"
     ismobilejs "^1.0.3"
 
-"@arcblock/ux@^1.16.33":
-  version "1.16.33"
-  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-1.16.33.tgz#e17ba70f097896a5fea796c97fe1e1dc5f1e6547"
-  integrity sha512-nIgFTmLxE5FknUKqt79YGO8AEYGZtil4gwA72J6VovNTmohAOGsA8hJYtNGJX4RZSnc7wXdguyTPhV8d17+vHQ==
+"@arcblock/ux@^1.16.41":
+  version "1.16.41"
+  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-1.16.41.tgz#4fa1eece651ea8062c22f73772597609c6132792"
+  integrity sha512-hlxigXgztzWizGVJOVZenIRsXBEdttWVdvwYORBFB5fum2MiqYJZT/QuRlyBzueO8OXCYcwx1dgVyyQyKZNy0g==
   dependencies:
-    "@arcblock/icons" "^1.16.33"
-    "@arcblock/react-hooks" "^1.16.33"
+    "@arcblock/icons" "^1.16.41"
+    "@arcblock/react-hooks" "^1.16.41"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@material-ui/core" "^4.12.3"
     "@material-ui/icons" "4.11.2"
@@ -80,7 +80,7 @@
     lodash "^4.17.21"
     mdi-material-ui "^6.22.1"
     react-cookie-consent "^6.4.1"
-    react-helmet "^5.2.1"
+    react-helmet "^6.1.0"
     react-intersection-observer "^8.31.1"
     react-player "^1.15.2"
     react-router-dom "^5.1.2"
@@ -9773,7 +9773,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.4, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10039,20 +10039,20 @@ react-error-overlay@^6.0.9:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz#3c743010c9359608c375ecd6bc76f35d93995b0a"
   integrity sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew==
 
-react-fast-compare@^2.0.2:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
-  integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
+react-fast-compare@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  integrity sha512-rtGImPZ0YyLrscKI9xTpV8psd6I8VAtjKCzQDlzyDvqJA8XOW78TXYQwNRNd8g8JZnDu8q9Fu/1v4HPAVwVdHA==
 
-react-helmet@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-5.2.1.tgz#16a7192fdd09951f8e0fe22ffccbf9bb3e591ffa"
-  integrity sha512-CnwD822LU8NDBnjCpZ4ySh8L6HYyngViTZLfBBb3NjtrpN8m49clH8hidHouq20I51Y6TpCTISCBbqiY5GamwA==
+react-helmet@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
   dependencies:
     object-assign "^4.1.1"
-    prop-types "^15.5.4"
-    react-fast-compare "^2.0.2"
-    react-side-effect "^1.1.0"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.1.1"
+    react-side-effect "^2.1.0"
 
 react-intersection-observer@^8.31.1:
   version "8.31.1"
@@ -10186,12 +10186,10 @@ react-shadow@^19.0.2:
     humps "^2.0.1"
     react-use "^15.3.3"
 
-react-side-effect@^1.1.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-1.2.0.tgz#0e940c78faba0c73b9b0eba9cd3dda8dfb7e7dae"
-  integrity sha512-v1ht1aHg5k/thv56DRcjw+WtojuuDHFUgGfc+bFHOWsF4ZK6C2V57DO0Or0GPsg6+LSTE0M6Ry/gfzhzSwbc5w==
-  dependencies:
-    shallowequal "^1.0.1"
+react-side-effect@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
+  integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
 react-transition-group@^4.4.0:
   version "4.4.1"
@@ -10997,7 +10995,7 @@ sha.js@^2.4.0, sha.js@^2.4.8:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
-shallowequal@^1.0.1, shallowequal@^1.1.0:
+shallowequal@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
