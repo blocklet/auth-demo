@@ -15,6 +15,8 @@ import Alert from '@material-ui/lab/Alert';
 
 import DidAvatar from '@arcblock/did-connect/lib/Avatar';
 import SessionManager from '@arcblock/did-connect/lib/SessionManager';
+import Header from '@arcblock/ux/lib/Layout/header';
+import Footer from '@arcblock/ux/lib/Layout/footer';
 
 import Button from '@arcblock/ux/lib/Button';
 
@@ -79,8 +81,24 @@ export default function Main() {
   const isLogin = !!session.user;
   const webWalletUrl = getWebWalletUrl();
 
+  function genLinks(count, prefix = '') {
+    return [...new Array(count)].map((_, i) => {
+      const key = prefix ? `${prefix}-${i + 1}` : i + 1;
+      return { title: `Title ${key}`, link: `/link-${key}` };
+    });
+  }
+  
+  const mockBlockletData = {
+    appLogo: 'https://store.blocklet.dev/assets/z8iZpNnc48qcmdMYtvnHFQqroFikNG1AVTmfC/logo.png',
+    navigation: genLinks(5),
+    theme: {
+      background: '#00FFFF',
+    }
+  }
+
   return (
     <Container>
+      <Header {...mockBlockletData}></Header>
       <Media className="header">
         <div className="left">
           <div style={{ fontSize: 20 }}>Auth Demo</div>
@@ -190,6 +208,7 @@ export default function Main() {
           </DialogActions>
         </Dialog>
       )}
+      <Footer {...mockBlockletData}></Footer>
     </Container>
   );
 }
