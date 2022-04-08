@@ -19,7 +19,6 @@ import SessionManager from '@arcblock/did-connect/lib/SessionManager';
 import Button from '@arcblock/ux/lib/Button';
 
 import { useSessionContext } from '../libs/session';
-import { getWebWalletUrl } from '../libs/util';
 
 export default function Main() {
   const { session, api } = useSessionContext();
@@ -77,7 +76,6 @@ export default function Main() {
   };
 
   const isLogin = !!session.user;
-  const webWalletUrl = getWebWalletUrl();
 
   return (
     <Container>
@@ -86,7 +84,7 @@ export default function Main() {
           <div style={{ fontSize: 20 }}>Auth Demo</div>
         </div>
         <div className="right">
-          <SessionManager session={session} webWalletUrl={webWalletUrl} showRole />
+          <SessionManager session={session} showRole />
         </div>
       </Media>
       {!isLogin && (

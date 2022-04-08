@@ -1,5 +1,5 @@
 import React from 'react';
-import { getWebWalletUrl } from './libs/util';
+
 import { SessionProvider } from './libs/session';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -12,10 +12,9 @@ if (window.blocklet && window.blocklet.prefix) {
 }
 
 function App() {
-  const webWalletUrl = getWebWalletUrl();
 
   return (
-    <SessionProvider serviceHost={prefix} webWalletUrl={webWalletUrl}>
+    <SessionProvider serviceHost={prefix}>
       <CssBaseline />
       <Main />
     </SessionProvider>
