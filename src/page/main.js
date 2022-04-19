@@ -11,12 +11,15 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Box from '@material-ui/core/Box';
 import Alert from '@material-ui/lab/Alert';
 
 import DidAvatar from '@arcblock/did-connect/lib/Avatar';
 import SessionManager from '@arcblock/did-connect/lib/SessionManager';
 
 import Button from '@arcblock/ux/lib/Button';
+import Header from '@arcblock/ux/lib/Layout/header';
+import Footer from '@arcblock/ux/lib/Layout/footer';
 
 import { useSessionContext } from '../libs/session';
 import { getWebWalletUrl } from '../libs/util';
@@ -79,16 +82,33 @@ export default function Main() {
   const isLogin = !!session.user;
   const webWalletUrl = getWebWalletUrl();
 
+  // function genLinks(count, prefix = '') {
+  //   return [...new Array(count)].map((_, i) => {
+  //     const key = prefix ? `${prefix}-${i + 1}` : i + 1;
+  //     return { title: `Title ${key}`, link: `/link-${key}` };
+  //   });
+  // }
+
   return (
     <Container>
-      <Media className="header">
+      <Header {...{
+        appLogo: <img src={window.blocklet.appLogo} style={{borderRadius: 8, width: 40, height: 40}}/>,
+        navigation: window.blocklet.navigation || [],
+        theme: window.blocklet.theme || {},
+        addons: [
+          <SessionManager session={session} webWalletUrl={webWalletUrl} showRole />
+        ]
+      }}></Header>
+
+      {/* <Media className="header">
         <div className="left">
           <div style={{ fontSize: 20 }}>Auth Demo</div>
         </div>
         <div className="right">
-          <SessionManager session={session} webWalletUrl={webWalletUrl} showRole />
         </div>
-      </Media>
+      </Media> */}
+
+      <Box my={2} />
       {!isLogin && (
         <div style={{ marginBottom: 20 }}>
           <Alert severity="info">Login to post message</Alert>
@@ -190,6 +210,13 @@ export default function Main() {
           </DialogActions>
         </Dialog>
       )}
+      <Footer {...{
+        navigation: window.blocklet.navigation || [],
+        theme: window.blocklet.theme || {},
+        style: {
+          marginTop: 16
+        }
+      }}></Footer>
     </Container>
   );
 }
@@ -197,6 +224,7 @@ export default function Main() {
 const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
+  min-height: 100vh;
   padding: 0 10px;
   .header {
     padding: 20px 0;

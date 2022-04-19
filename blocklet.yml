@@ -44,3 +44,5 @@ payment:
 capabilities:
   clusterMode: false
   component: true
+theme:
+  background: 'rgb(221, 241, 224)'
