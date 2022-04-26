@@ -11,12 +11,14 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import Box from '@material-ui/core/Box';
 import Alert from '@material-ui/lab/Alert';
 
 import DidAvatar from '@arcblock/did-connect/lib/Avatar';
-import SessionManager from '@arcblock/did-connect/lib/SessionManager';
 
 import Button from '@arcblock/ux/lib/Button';
+import Header from '@blocklet/ui/lib/Header';
+import Footer from '@blocklet/ui/lib/Footer';
 
 import { useSessionContext } from '../libs/session';
 
@@ -78,117 +80,115 @@ export default function Main() {
   const isLogin = !!session.user;
 
   return (
-    <Container>
-      <Media className="header">
-        <div className="left">
-          <div style={{ fontSize: 20 }}>Auth Demo</div>
-        </div>
-        <div className="right">
-          <SessionManager session={session} showRole />
-        </div>
-      </Media>
-      {!isLogin && (
-        <div style={{ marginBottom: 20 }}>
-          <Alert severity="info">Login to post message</Alert>
-        </div>
-      )}
-      <Media>
-        <div className="left">
-          {isLogin ? <DidAvatar did={session.user.did}></DidAvatar> : <Avatar alt="" src=""></Avatar>}
-        </div>
-        <div className="body">
-          <TextField
-            id="outlined-multiline-static"
-            label="What's happening"
-            multiline
-            rows={4}
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-            variant="outlined"
-            disabled={!isLogin}
-            fullWidth
-            onKeyUp={(e) => {
-              console.log(e.code);
-              if (e.code === 'Enter' && e.ctrlKey) onPublish();
-            }}
-          />
-          <div style={{ textAlign: 'right', marginTop: 8 }}>
-            <Button rounded disabled={!isLogin || loading} variant="contained" color="primary" onClick={onPublish}>
-              Post
-            </Button>
-          </div>
-        </div>
-      </Media>
-      {isLogin && (
-        <>
-          <div style={{ margin: '10px 0' }}>
-            <Alert severity="info">Tip: admin role can delete post</Alert>
-          </div>
-          <div style={{ margin: '10px 0' }}>
-            <Alert severity="info">Tip: you can manage user role in ABT Node dashboard</Alert>
-          </div>
-        </>
-      )}
-      <div>
-        {posts.map((post) => (
-          <Media style={{ padding: '14px 0' }}>
+    <Box display="flex" flexDirection="column" height="100vh" overflow="hidden">
+      <Header/>
+      <Box flex="1" my={4} overflow="auto">
+        <Container>
+          {!isLogin && (
+            <div style={{ marginBottom: 20 }}>
+              <Alert severity="info">Login to post message</Alert>
+            </div>
+          )}
+          <Media>
             <div className="left">
-              <DidAvatar did={post.poster.did} />
+              {isLogin ? <DidAvatar did={session.user.did}></DidAvatar> : <Avatar alt="" src=""></Avatar>}
             </div>
             <div className="body">
-              <div>
-                <span>{post.poster.fullName}</span>
-                <span style={{ marginLeft: 10, color: '#888' }}>
-                  {dayjs(post.createdAt).format('YYYY-MM-DD hh:mm:ss')}
-                </span>
+              <TextField
+                id="outlined-multiline-static"
+                label="What's happening"
+                multiline
+                rows={4}
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
+                variant="outlined"
+                disabled={!isLogin}
+                fullWidth
+                onKeyUp={(e) => {
+                  console.log(e.code);
+                  if (e.code === 'Enter' && e.ctrlKey) onPublish();
+                }}
+              />
+              <div style={{ textAlign: 'right', marginTop: 8 }}>
+                <Button rounded disabled={!isLogin || loading} variant="contained" color="primary" onClick={onPublish}>
+                  Post
+                </Button>
               </div>
-              <div style={{ minHeight: 20, whiteSpace: 'pre' }}>{post.content}</div>
-            </div>
-            <div className="right">
-              {isLogin && session.user.role === 'admin' && (
-                <IconButton
-                  color="secondary"
-                  aria-label="upload picture"
-                  component="span"
-                  onClick={() => {
-                    setDeleteDialog({ id: post._id });
-                  }}>
-                  <DeleteIcon />
-                </IconButton>
-              )}
             </div>
           </Media>
-        ))}
-      </div>
-      {!!deleteDialog && (
-        <Dialog
-          open
-          onClose={() => {
-            setDeleteDialog(null);
-          }}
-          aria-labelledby="alert-dialog-title"
-          aria-describedby="alert-dialog-description"
-          maxWidth="sm"
-          fullWidth>
-          <DialogTitle id="alert-dialog-title"></DialogTitle>
-          <DialogContent>
-            <DialogContentText id="alert-dialog-description">Confirm Delete?</DialogContentText>
-          </DialogContent>
-          <DialogActions>
-            <Button
-              onClick={() => {
+          {isLogin && (
+            <>
+              <div style={{ margin: '10px 0' }}>
+                <Alert severity="info">Tip: admin role can delete post</Alert>
+              </div>
+              <div style={{ margin: '10px 0' }}>
+                <Alert severity="info">Tip: you can manage user role in ABT Node dashboard</Alert>
+              </div>
+            </>
+          )}
+          <div>
+            {posts.map((post) => (
+              <Media style={{ padding: '14px 0' }}>
+                <div className="left">
+                  <DidAvatar did={post.poster.did} />
+                </div>
+                <div className="body">
+                  <div>
+                    <span>{post.poster.fullName}</span>
+                    <span style={{ marginLeft: 10, color: '#888' }}>
+                      {dayjs(post.createdAt).format('YYYY-MM-DD hh:mm:ss')}
+                    </span>
+                  </div>
+                  <div style={{ minHeight: 20, whiteSpace: 'pre' }}>{post.content}</div>
+                </div>
+                <div className="right">
+                  {isLogin && session.user.role === 'admin' && (
+                    <IconButton
+                      color="secondary"
+                      aria-label="upload picture"
+                      component="span"
+                      onClick={() => {
+                        setDeleteDialog({ id: post._id });
+                      }}>
+                      <DeleteIcon />
+                    </IconButton>
+                  )}
+                </div>
+              </Media>
+            ))}
+          </div>
+          {!!deleteDialog && (
+            <Dialog
+              open
+              onClose={() => {
                 setDeleteDialog(null);
               }}
-              color="primary">
-              No
-            </Button>
-            <Button onClick={() => onDelete(deleteDialog.id)} color="primary" autoFocus>
-              Yes
-            </Button>
-          </DialogActions>
-        </Dialog>
-      )}
-    </Container>
+              aria-labelledby="alert-dialog-title"
+              aria-describedby="alert-dialog-description"
+              maxWidth="sm"
+              fullWidth>
+              <DialogTitle id="alert-dialog-title"></DialogTitle>
+              <DialogContent>
+                <DialogContentText id="alert-dialog-description">Confirm Delete?</DialogContentText>
+              </DialogContent>
+              <DialogActions>
+                <Button
+                  onClick={() => {
+                    setDeleteDialog(null);
+                  }}
+                  color="primary">
+                  No
+                </Button>
+                <Button onClick={() => onDelete(deleteDialog.id)} color="primary" autoFocus>
+                  Yes
+                </Button>
+              </DialogActions>
+            </Dialog>
+          )}
+        </Container>
+      </Box>
+      <Footer />
+    </Box>
   );
 }
 
