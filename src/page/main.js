@@ -17,8 +17,8 @@ import Alert from '@material-ui/lab/Alert';
 import DidAvatar from '@arcblock/did-connect/lib/Avatar';
 
 import Button from '@arcblock/ux/lib/Button';
-import Header from '@blocklet/ui/lib/Header';
-import Footer from '@blocklet/ui/lib/Footer';
+import Header from '@blocklet/ui-react/lib/Header';
+import Footer from '@blocklet/ui-react/lib/Footer';
 
 import { useSessionContext } from '../libs/session';
 
