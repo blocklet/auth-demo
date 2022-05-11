@@ -1,3 +1,7 @@
+## 1.4.4 (May 12, 2022)
+
+- chore(deps): bump chain and common deps to latest
+
 ## 1.4.3 (May 09, 2022)
 
 - chore: use new version of blocklet-ui Header/Footer

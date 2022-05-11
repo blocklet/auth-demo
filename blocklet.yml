@@ -1,5 +1,5 @@
 name: auth-demo
-version: 1.4.3
+version: 1.4.4
 main: api/index.js
 author:
   name: linchen1987
@@ -8,7 +8,7 @@ homepage: ''
 title: Auth Demo
 description: ABT Node blocklet project
 group: dapp
-specVersion: 1.2.4
+specVersion: 1.2.7
 files:
   - blocklet.md
   - README.md
