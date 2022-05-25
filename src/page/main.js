@@ -82,7 +82,7 @@ export default function Main() {
   return (
     <Box display="flex" flexDirection="column" height="100vh" overflow="hidden">
       <Header/>
-      <Box flex="1" my={4} overflow="auto">
+      <Box flex="1" py={4} overflow="auto">
         <Container>
           {!isLogin && (
             <div style={{ marginBottom: 20 }}>

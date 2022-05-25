@@ -1,3 +1,7 @@
+## 1.4.5 (May 25, 2022)
+
+- fix: fix issue with truncating text in text-field label
+
 ## 1.4.4 (May 12, 2022)
 
 - chore(deps): bump chain and common deps to latest
