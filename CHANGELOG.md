@@ -1,3 +1,7 @@
+## 1.4.6 (May 30, 2022)
+
+- chore: upgrade to react 18 and mui v5
+
 ## 1.4.5 (May 25, 2022)
 
 - fix: fix issue with truncating text in text-field label
