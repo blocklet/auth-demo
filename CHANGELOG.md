@@ -1,3 +1,7 @@
+## 1.4.8 (June 13, 2022)
+
+- chore: update arcblock dependences
+
 ## 1.4.7 (June 02, 2022)
 
 - chore: update blocklet-ui and adjust layout
