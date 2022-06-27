@@ -1,3 +1,7 @@
+## 1.4.9 (June 27, 2022)
+
+- chore: update logo & update deps
+
 ## 1.4.8 (June 13, 2022)
 
 - chore: update arcblock dependences
