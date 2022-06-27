@@ -9,6 +9,7 @@ title: Auth Demo
 description: ABT Node blocklet project
 group: dapp
 specVersion: 1.2.7
+logo: logo.png
 files:
   - blocklet.md
   - README.md
