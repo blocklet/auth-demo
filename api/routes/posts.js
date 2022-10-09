@@ -10,7 +10,7 @@ const auth = (req, res, next) => {
 module.exports = {
   init(app) {
     app.get('/api/posts/list', async (req, res) => {
-      db.find({}).sort({ createdAt: -1}).limit(100).exec((err, docs) => {
+      db.cursor({}).sort({ createdAt: -1}).limit(100).exec((err, docs) => {
         res.json(docs);
       })
     });

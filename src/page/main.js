@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import { styled } from '@arcblock/ux/lib/Theme';
 import dayjs from 'dayjs';
 
 import TextField from '@mui/material/TextField';
@@ -130,7 +130,7 @@ export default function Main() {
             )}
             <div>
               {posts.map((post) => (
-                <Media style={{ padding: '14px 0' }}>
+                <Media key={post._id} style={{ padding: '14px 0' }}>
                   <div className="left">
                     <DidAvatar did={post.poster.did} />
                   </div>
@@ -196,7 +196,7 @@ export default function Main() {
   );
 }
 
-const MainContainer = styled.div`
+const MainContainer = styled('div')`
   max-width: 600px;
   margin: 0 auto;
   .header {
@@ -206,7 +206,7 @@ const MainContainer = styled.div`
   }
 `;
 
-const Media = styled.div`
+const Media = styled('div')`
   display: flex;
   justify-content: space-between;
   .left {
