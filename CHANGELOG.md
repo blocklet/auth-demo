@@ -1,3 +1,7 @@
+## 1.5.0 (October 21, 2022)
+
+- chore: update deps & remove styled-components (#36)
+
 ## 1.4.9 (June 27, 2022)
 
 - chore: update logo & update deps
