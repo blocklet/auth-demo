@@ -1,3 +1,8 @@
+## 1.6.0 (March 16, 2023)
+
+- chore: bump deps to latest
+- [skip ci] Update README.md
+
 ## 1.5.0 (October 21, 2022)
 
 - chore: update deps & remove styled-components (#36)
