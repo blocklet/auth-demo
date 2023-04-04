@@ -1,5 +1,5 @@
 name: auth-demo
-version: 1.6.0
+version: 1.6.1
 main: api/index.js
 author:
   name: linchen1987
@@ -31,7 +31,7 @@ documentation: ''
 timeout:
   start: 60
 requirements:
-  server: '>=1.6.29'
+  server: '>=1.16.0'
   os: '*'
   cpu: '*'
 environments: []
