@@ -24,14 +24,14 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@arcblock/did-connect@^2.5.49":
-  version "2.5.49"
-  resolved "https://registry.yarnpkg.com/@arcblock/did-connect/-/did-connect-2.5.49.tgz#59b60c8842407df0c130638900909bd611a902c5"
-  integrity sha512-79CiR5T323MAWOsEN/pBsr15Ob7RkdaGIRstmP+hBAkOxDOA8pkM9DZcm8NDbq7uebh2k0zEQavScUoDq5LpfA==
+"@arcblock/did-connect@^2.5.50":
+  version "2.5.50"
+  resolved "https://registry.yarnpkg.com/@arcblock/did-connect/-/did-connect-2.5.50.tgz#883b0090db6249d4b296d69232cd81276b3cfba3"
+  integrity sha512-JsoA7nDRDDHdVDJl1PjoFGkaiO/GQLFrim2u8N0FeEQBYhTp8dkTvLjPehmu0oco/oaQj3MCwflowA80mxfxFQ==
   dependencies:
-    "@arcblock/icons" "^2.5.49"
-    "@arcblock/react-hooks" "^2.5.49"
-    "@arcblock/ux" "^2.5.49"
+    "@arcblock/icons" "^2.5.50"
+    "@arcblock/react-hooks" "^2.5.50"
+    "@arcblock/ux" "^2.5.50"
     "@arcblock/ws" "^1.18.84"
     "@auth0/auth0-react" "^2.0.1"
     "@emotion/react" "^11.10.4"
@@ -79,10 +79,10 @@
     amp-message "~0.1.2"
     axon "^2.0.3"
 
-"@arcblock/icons@^2.5.49":
-  version "2.5.49"
-  resolved "https://registry.yarnpkg.com/@arcblock/icons/-/icons-2.5.49.tgz#0b8bfbe706ec4490cb645f01f1f2f0a4872b636a"
-  integrity sha512-BYfhwt410YUPi52cZIvaOI6NTZ0ohPIJC1Bf9DN+9NLxuI6gtUUHClLMn/cZ8idqJx7sh/LQiwP76k9n8W4gHA==
+"@arcblock/icons@^2.5.50":
+  version "2.5.50"
+  resolved "https://registry.yarnpkg.com/@arcblock/icons/-/icons-2.5.50.tgz#6670fd1b821f55297c905e215e8d69cf498815db"
+  integrity sha512-XXw5GUY/OA9pRBE+DhEOZZmxXrAxipQlvpZElbwcQpu5LahaJ1RTpQMNeXxLQpEs5us+CQqzYHa98x1tRNztVQ==
 
 "@arcblock/jwt@1.18.84":
   version "1.18.84"
@@ -96,23 +96,23 @@
     json-stable-stringify "^1.0.1"
     semver "^7.3.8"
 
-"@arcblock/react-hooks@^2.5.49":
-  version "2.5.49"
-  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-2.5.49.tgz#c3e1c524374794d1b6a0a5a076035c10740de057"
-  integrity sha512-sxPMsw15eVKNjWRA0g/Ig/zDbST4csu3PAUcB5EUEU+20BMFRIv4hpM/gmDN31TGnYxJLVhITNw1qjC7C/WevQ==
+"@arcblock/react-hooks@^2.5.50":
+  version "2.5.50"
+  resolved "https://registry.yarnpkg.com/@arcblock/react-hooks/-/react-hooks-2.5.50.tgz#49965d549daf70d1c065b665c957aef070df23d4"
+  integrity sha512-+Wsbqq1aEsler8mOlbIyfmGJ5N8qfz8U+MKOM7Tnf7AoQrYL/6P9mP5IJ1+LZg99KqRtR1rREt2VCyf6fjdAYQ==
   dependencies:
     core-js "^3.25.5"
     event-target-shim "^5.0.1"
     ismobilejs "^1.1.1"
 
-"@arcblock/ux@^2.5.49":
-  version "2.5.49"
-  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-2.5.49.tgz#2988a574e3c17369e646eb20fc3984a4bb1f4d7c"
-  integrity sha512-HLBxmB3T64W0Jd5Xunh5slfKdjRk/F2lkVtipzHDORwESZ3LR83iHMk+a4gLBWXfipANjrdlh5BIs+MK5G1jmA==
+"@arcblock/ux@^2.5.50":
+  version "2.5.50"
+  resolved "https://registry.yarnpkg.com/@arcblock/ux/-/ux-2.5.50.tgz#c43f6cf1a9977334f1c6b8a479edc7f7886f8863"
+  integrity sha512-JAVNg7Q4LtZ4oeBN/qGlL+Vt+sGbKnBs4L0tXlsmcqDXvxc/fBIc/ezljHj3y0OFK0YC2D1vcI0PhXO6MgAYpA==
   dependencies:
     "@arcblock/did-motif" "^1.1.10"
-    "@arcblock/icons" "^2.5.49"
-    "@arcblock/react-hooks" "^2.5.49"
+    "@arcblock/icons" "^2.5.50"
+    "@arcblock/react-hooks" "^2.5.50"
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@emotion/react" "^11.10.4"
     "@emotion/styled" "^11.10.4"
@@ -1239,13 +1239,13 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@blocklet/ui-react@^2.5.49":
-  version "2.5.49"
-  resolved "https://registry.yarnpkg.com/@blocklet/ui-react/-/ui-react-2.5.49.tgz#67b02d3cfcf3f3eec0347385f47e0154670384a9"
-  integrity sha512-XTy4TLjsG8Tfy55hX9T32kOieTPVuSpWEmQr67legX/x70kmP4yE7lutXAAcXHDjZgpaKvgKQ19ytFWqKPHrIQ==
+"@blocklet/ui-react@^2.5.50":
+  version "2.5.50"
+  resolved "https://registry.yarnpkg.com/@blocklet/ui-react/-/ui-react-2.5.50.tgz#6633d2036a76446e21e376f7bd128e13e02304c2"
+  integrity sha512-6bAIJVMKsafNWTVlt0oEBu+86XAshj4uJUCtJASqITI2ZspLAC0dF1ZcSmlPEkMEI7azI5JDh+vkY9sDp6HhzQ==
   dependencies:
-    "@arcblock/did-connect" "^2.5.49"
-    "@arcblock/ux" "^2.5.49"
+    "@arcblock/did-connect" "^2.5.50"
+    "@arcblock/ux" "^2.5.50"
     "@emotion/react" "^11.10.4"
     "@emotion/styled" "^11.10.4"
     "@iconify/iconify" "^2.2.1"
