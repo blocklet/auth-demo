@@ -1,18 +1,22 @@
+## 1.12.0 (June 20, 2023)
+
+- chore: bump deps to latest
+
 ## 1.11.0 (June 18, 2023)
 
-
+- chore: bump deps to latest
 
 ## 1.10.0 (June 13, 2023)
 
-
+- chore: bump deps to latest
 
 ## 1.9.0 (June 12, 2023)
 
-
+- chore: bump deps to latest
 
 ## 1.8.0 (May 24, 2023)
 
-
+- chore: bump deps to latest
 
 ## 1.7.0 (April 24, 2023)
 
