@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const fallback = require('express-history-api-fallback');
+const fallback = require('@blocklet/sdk/lib/middlewares/fallback');
 
 const isProduction = process.env.NODE_ENV !== 'development'
 
