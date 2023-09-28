@@ -1,8 +1,10 @@
 name: auth-demo
-version: 1.13.1
+version: 1.13.2
 main: api/index.js
 author:
-  name: linchen1987
+  name: ArcBlock
+  email: blocklet@arcblock.io
+  url: https://github.com/blocklet
 license: ''
 homepage: ''
 title: Auth Demo
@@ -26,8 +28,8 @@ interfaces:
     port: BLOCKLET_PORT
     protocol: http
 did: z8iZw1PjUeQP8yuEoBVWfcD9hft7cbUfxaTaT
-community: ''
-documentation: ''
+community: https://community.arcblock.io
+documentation: https://developer.blocklet.io
 timeout:
   start: 60
 requirements:
