@@ -1,6 +1,6 @@
 {
   "name": "auth-demo",
-  "version": "1.17.0",
+  "version": "1.21.0",
   "main": "index.js",
   "author": "ArcBlock",
   "license": "MIT",
@@ -23,10 +23,10 @@
     "bump-version": "make bump-version"
   },
   "dependencies": {
-    "@arcblock/did-connect": "^2.9.57",
-    "@arcblock/ux": "^2.9.57",
-    "@blocklet/sdk": "v1.16.24",
-    "@blocklet/ui-react": "^2.9.57",
+    "@arcblock/did-connect": "^2.10.39",
+    "@arcblock/ux": "^2.10.39",
+    "@blocklet/sdk": "v1.16.32",
+    "@blocklet/ui-react": "^2.10.39",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.14",
