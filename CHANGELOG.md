@@ -1,3 +1,7 @@
+## 1.22.0 (September 27, 2024)
+
+- chore: bump deps to latest
+
 ## 1.21.0 (April 03, 2024)
 
 - just another another test
