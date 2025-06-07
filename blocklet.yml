@@ -1,5 +1,5 @@
 name: z2qZxf2VrwCM35aotK62w9NRDs2hmVDrMML8C
-version: 1.22.0
+version: 1.22.1
 main: api/index.js
 author:
   name: ArcBlock
@@ -27,6 +27,7 @@ interfaces:
     prefix: '*'
     port: BLOCKLET_PORT
     protocol: http
+    proxyBehavior: service
 did: z2qZxf2VrwCM35aotK62w9NRDs2hmVDrMML8C
 community: https://community.arcblock.io
 documentation: https://developer.blocklet.io
@@ -48,3 +49,4 @@ capabilities:
   component: true
   navigation: true
 components: []
+egress: true
